@@ -1,0 +1,7 @@
+package com.day10.dem;
+
+public class Test extends Thread{
+		public Test() {
+			
+		}
+}

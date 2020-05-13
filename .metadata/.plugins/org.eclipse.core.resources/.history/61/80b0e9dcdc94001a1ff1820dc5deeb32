@@ -1,0 +1,23 @@
+package com.thread.demo02.synchronizmethod;
+/**
+ * 同步：步调一致地处理，       例如，一群人排队上公交
+ * 异步：并发执行，各干各的。 例如，一群人蜂拥上卡车。
+ * 
+ * 	常见的共享数据：
+ * 				多线程共享实例变量
+ * 				静态公共变量
+ * @author admin
+ *
+ */
+public class DrawThread extends Thread{
+	private Card card;
+	private double DrawAmount;//取款金额
+	public DrawThread(String name,Card card, double drawAmount) {
+		super(name);//把name值传递给线程类
+		this.card = card;
+		DrawAmount = drawAmount;
+	}
+	public void run() {
+		card.getMoney(DrawAmount);
+	}
+}

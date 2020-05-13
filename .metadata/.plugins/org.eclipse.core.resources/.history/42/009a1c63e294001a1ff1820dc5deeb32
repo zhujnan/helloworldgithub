@@ -1,0 +1,14 @@
+package com.day10.demo2;
+
+public class Producer extends Thread{
+	private int neednum;//��Ҫ����������
+	private Godown godown; //�ֿ�
+	public Producer(int neednum,
+			Godown godown) {
+		this.neednum = neednum;
+		this.godown = godown;
+	}
+	public void run() {
+		godown.produce(neednum);//ָ�����������Ĳ�Ʒ
+	}
+}

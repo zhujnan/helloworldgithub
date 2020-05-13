@@ -1,0 +1,14 @@
+package com.day06.demo2;
+
+public class T2 {
+	/**
+	 * + - * 除
+	 * @param args
+	 */
+	public static void main(String[] args) {
+			int a = 4;
+			int result = a*a*a*a;
+			double result2 = Math.pow((double)a, 4.0);
+	}
+;
+}

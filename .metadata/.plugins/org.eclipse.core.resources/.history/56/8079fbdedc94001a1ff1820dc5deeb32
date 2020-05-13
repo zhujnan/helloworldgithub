@@ -1,0 +1,14 @@
+package com.thread.demo02.synchronizmethod;
+
+public class DrawThread extends Thread{
+	private Card card;
+	private double DrawAmount;//ȡ����
+	public DrawThread(String name,Card card, double drawAmount) {
+		super(name);//��nameֵ���ݸ��߳���
+		this.card = card;
+		DrawAmount = drawAmount;
+	}
+	public void run() {
+		card.getMoney(DrawAmount);
+	}
+}

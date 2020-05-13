@@ -1,0 +1,17 @@
+package com.day05.demo2;
+
+public class TestMain {
+	public static void main(String[] args) {
+		SalariedEmployee salariedEmployee
+			= new SalariedEmployee();
+		
+		HourlyEmployee hourlyEmployee
+			= new HourlyEmployee();
+		Employee[] employee = new Employee[2];
+		employee[0] = salariedEmployee;
+		employee[1] = hourlyEmployee;
+		
+		PayrollSystem payrollSystem
+			= new PayrollSystem(employee);
+	}
+}

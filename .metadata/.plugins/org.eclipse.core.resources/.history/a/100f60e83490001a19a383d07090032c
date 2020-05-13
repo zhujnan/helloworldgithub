@@ -1,0 +1,5 @@
+package com.teris;
+
+public class S extends Tetromino {
+
+}

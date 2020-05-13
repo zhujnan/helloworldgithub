@@ -1,0 +1,48 @@
+package com.thread.demo02.synchronizmethod;
+
+public class Card {
+	private String number;//卡号
+	private double balance;//账户余额
+	public Card(String number, double balance) {
+		super();
+		this.number = number;
+		this.balance = balance;
+	}
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	public /*synchronized*/ void getMoney(double DrawAmount){
+	/**	
+	 * 直接使用synchronized关键字，修饰方法，相当于sychronized(this){}
+	 * 尽量减少同步范围，提高并发效率
+	 */
+
+				synchronized (this) {
+					if (getBalance() > DrawAmount) {
+						System.out.println(Thread.currentThread().getName()
+								+ "取款" + DrawAmount + "成功");
+						try {
+							Thread.sleep(10);
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+						setBalance(getBalance() - DrawAmount);
+						System.out.println("账户余额为" + getBalance());
+					} else {
+						System.out.println(Thread.currentThread().getName()
+								+ "取款失败");
+					}
+				}
+				
+	
+	}
+}

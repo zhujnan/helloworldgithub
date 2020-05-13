@@ -1,0 +1,18 @@
+package com.day04.cal;
+
+import java.util.Scanner;
+
+public class OperationTest {
+
+	public static void main(String[] args) {
+		System.out.println("输入参与运算数A");
+		Scanner sc = new Scanner(System.in);
+		double nA = sc.nextDouble();
+		double nB = sc.nextDouble();
+		
+		
+		Operation operation = new 
+
+	}
+
+}

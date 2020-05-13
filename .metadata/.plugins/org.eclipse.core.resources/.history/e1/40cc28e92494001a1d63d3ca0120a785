@@ -1,0 +1,12 @@
+package com.day10.dem;
+
+public class TestThread {
+	public static void main(String[] args) {
+		Thread01 t1 = new Thread01("奇数");
+		Thread02 t2 = new Thread02("偶数");
+		t1.setPriority(10);
+		t2.setPriority(1);
+		t1.start();
+		t2.start();
+	}
+}

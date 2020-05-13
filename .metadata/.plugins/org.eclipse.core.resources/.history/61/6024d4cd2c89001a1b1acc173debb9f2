@@ -1,0 +1,12 @@
+package com.day05.demo2;
+
+public class SalariedEmployee 
+extends Employee{
+
+	@Override
+	public void earnings() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

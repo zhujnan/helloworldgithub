@@ -1,0 +1,13 @@
+package com.day06.demo2;
+
+import java.math.BigDecimal;
+
+public class T3 {
+	public static void main(String[] args) {
+		double result = 1.0/32.0;
+		System.out.println(result);
+		
+		BigDecimal bigDecimal = new BigDecimal(1);
+		System.out.println(bigDecimal.divide(new BigDecimal(32)));
+	}
+}

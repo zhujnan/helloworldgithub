@@ -1,0 +1,13 @@
+package com.day10.dem;
+/**
+ * 线程的实现方式1：继承Thread类
+ * @author zhujn
+ *
+ */
+public class TestThread01 extends Thread{
+	@Override
+	public void run() {
+		
+	}
+	
+}

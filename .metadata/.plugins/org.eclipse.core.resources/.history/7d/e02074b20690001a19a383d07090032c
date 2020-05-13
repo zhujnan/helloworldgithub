@@ -1,0 +1,7 @@
+package com.day09.demo;
+
+public class Person<T,V> {
+	private T name;
+	private V number;
+	
+}

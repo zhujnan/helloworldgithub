@@ -1,0 +1,45 @@
+package com.thread.demo02;
+/**
+ * 同步：步调一致地处理，       例如，一群人排队上公交
+ * 异步：并发执行，各干各的。 例如，一群人蜂拥上卡车。
+ * 
+ * 	常见的共享数据：
+ * 				多线程共享实例变量
+ * 				静态公共变量
+ * @author admin
+ *
+ */
+public class DrawThread extends Thread{
+	private Card card;
+	private double DrawAmount;//取款金额
+	public DrawThread(String name,
+			Card card,
+			double drawAmount) {
+		super(name);//把name值传递给线程类
+		this.card = card;
+		DrawAmount = drawAmount;
+	}
+	public void run() {
+		/**
+		 * sychronized(同步监视器)
+		 * 同步监视器：一个任意对象的实例，是多个线程之间互斥的锁机制，多个线程
+		 * 要用同一个监视器对象，实现同步互斥。
+		 */
+			synchronized (card) {
+				if (card.getBalance() > DrawAmount) {
+					System.out.println(Thread.currentThread().getName() + "取款"
+							+ DrawAmount + "成功");
+					try {
+						Thread.sleep(10);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+					card.setBalance(card.getBalance() - DrawAmount);
+					System.out.println("账户余额为" + card.getBalance());
+				} else {
+					System.out.println(Thread.currentThread().getName()
+							+ "取款失败");
+				}
+			}
+	}
+}

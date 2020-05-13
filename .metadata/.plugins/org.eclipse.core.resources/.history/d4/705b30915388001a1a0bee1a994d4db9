@@ -1,0 +1,21 @@
+package com.day04.cal;
+/**
+ * 工厂类
+ * @author zhujn
+ *
+ */
+public class OperationFactory {
+	
+	public static Operation operation(String str) {
+		switch (str) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		return null;
+		
+	}
+}

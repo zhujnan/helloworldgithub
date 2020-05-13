@@ -1,0 +1,12 @@
+package com.day07.demo3;
+
+public class LinkedList {
+
+	public static void main(String[] args) {
+		//创建linkedlist集合
+		LinkedListDemo linkedList
+			= new LinkedListDemo();
+	
+	}
+
+}

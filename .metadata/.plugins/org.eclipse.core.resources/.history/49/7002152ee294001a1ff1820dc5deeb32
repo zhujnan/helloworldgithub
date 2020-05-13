@@ -1,0 +1,16 @@
+package com.day10.demo2;
+/*
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
+*/
+public class Consumer extends Thread{
+	private int neednum; ///Ïû·Ñ²úÆ·µÄÊýÁ¿
+	private Godown godown; //²Ö¿â
+	public Consumer(int neednum, 
+			Godown godown) {
+		this.neednum = neednum;
+		this.godown = godown;
+	}
+	public void run() {
+		godown.consume(neednum);//ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ·
+	}
+}

@@ -1,0 +1,14 @@
+package com.day09.demo;
+
+public class Animal<> {
+	private String name;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void show() {
+		System.out.println("动物");
+	}
+}

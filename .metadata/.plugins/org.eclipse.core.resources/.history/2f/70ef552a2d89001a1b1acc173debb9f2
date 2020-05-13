@@ -1,0 +1,8 @@
+package com.day05.demo2;
+
+public class HourlyEmployee
+{
+	private double wage;
+	private int hour;
+	
+}

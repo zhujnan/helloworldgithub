@@ -1,0 +1,7 @@
+package com.day04.cal;
+
+public class Operation {
+	private double numA;
+	private double numB;
+	
+}

@@ -1,0 +1,23 @@
+package com.day06.stringdemo;
+
+import java.util.Arrays;
+
+public class TestString {
+	public static void main(String[] args) {
+		String str = "123456789";
+		/**
+		 * 1.将该字符串拆分成char类型的数组
+		 * char[] str2 = {'1','2','3','4'}
+		 */
+		char[] str2 = str.toCharArray();
+		System.out.println(Arrays.toString(str2));
+		/**
+		 * 2.将字符串abcdefg转换成大写输出。
+		 */
+		String str3 = "abcdefgh";
+		int indexValue = str3.indexOf("c");
+		
+		
+		
+	}
+}

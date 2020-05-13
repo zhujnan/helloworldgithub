@@ -1,0 +1,28 @@
+package com.teris;
+
+import java.util.Random;
+
+/**
+ * 俄罗斯方块类，
+ * 			L型，S型，O型，等。。。方块的父类
+ * @author zhujn
+ *
+ */
+public class Tetromino {
+	protected Cell[] cells = new Cell[4];
+	//protected State[] states;
+	public static Tetromino randomOne() {
+		Random random = new Random();
+		int type = random.nextInt(7);
+		switch (type) {
+			case 0:return new T();break;
+			case 1:return new I();break;
+			case 2:return new S();break;
+			case 3:return new Z();break;
+			case 4:return new J();break;
+			case 5:return new L();break;
+			case 6:return new O();break;
+		}
+		return null;
+	}
+}

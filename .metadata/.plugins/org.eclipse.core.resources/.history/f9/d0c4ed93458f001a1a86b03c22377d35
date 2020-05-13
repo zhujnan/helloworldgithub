@@ -1,0 +1,8 @@
+package com.day08.demo;
+
+public class MapTest {
+	public static void main(String[] args) {
+		HashMap<> hashmap = new HashMap();
+		
+	}
+}

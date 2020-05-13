@@ -1,0 +1,10 @@
+package com.day10.runnable;
+
+public class T1 implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+
+}

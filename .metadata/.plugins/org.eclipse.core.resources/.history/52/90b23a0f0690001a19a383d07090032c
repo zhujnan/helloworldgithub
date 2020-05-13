@@ -1,0 +1,15 @@
+package com.day09.demo;
+
+import java.util.HashMap;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		HashMap hashmap 
+			= new HashMap();
+		hashmap.put(1, "a");
+		
+		String value = hashmap.get(1);
+	}
+
+}

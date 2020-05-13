@@ -1,0 +1,11 @@
+package com.thread.demo02.synchronizmethod;
+
+public class Test {
+	public static void main(String[] args) {
+		Card card = new Card("12345",1000);
+		DrawThread t1 = new DrawThread("������", card, 800);
+		DrawThread t2 = new DrawThread("��Ůʿ", card, 800);
+		t1.start();
+		t2.start();
+	}
+}

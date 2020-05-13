@@ -1,0 +1,16 @@
+package com.day10.demo2;
+/*
+锟斤拷锟斤拷锟斤拷锟竭筹拷
+*/
+public class Consumer extends Thread{
+	private int neednum; ///消费产品的数量
+	private Godown godown; //仓库
+	public Consumer(int neednum, 
+			Godown godown) {
+		this.neednum = neednum;
+		this.godown = godown;
+	}
+	public void run() {
+		godown.consume(neednum);//消费指定数量的 产品
+	}
+}

@@ -1,0 +1,8 @@
+package com.day09.demo;
+
+public class Animal {
+	private String name;
+	public void show() {
+		System.out.println("动物");
+	}
+}

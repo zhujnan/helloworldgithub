@@ -1,0 +1,22 @@
+package com.day08.demo;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class MapTest2 {
+	public static void main(String[] args) {
+		HashMap hashmap = new HashMap();
+		hashmap.put("1", "A");
+		hashmap.put("2", "B");
+		hashmap.put("3", "C");
+		hashmap.put("4", "D");
+		HashSet set = (HashSet) hashmap.keySet();
+		for (Iterator iterator = set.iterator(); iterator.hasNext();) {
+			Object object = (Object) iterator.next();
+			
+		}
+	}
+}

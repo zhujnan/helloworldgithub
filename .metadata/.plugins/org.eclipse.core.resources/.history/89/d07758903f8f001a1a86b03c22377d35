@@ -1,0 +1,28 @@
+package com.day08.demo;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class SetTest {
+	public static void main(String[] args) {
+		HashSet hashSet = new HashSet();
+		hashSet.add("梅");
+		hashSet.add("兰");
+		hashSet.add("竹");
+		hashSet.add("菊");
+		hashSet.add("菊");
+		HashSet hashSet = new HashSet();
+		hashSet.add("梅");
+		hashSet.add("兰");
+		hashSet.add("竹");
+		hashSet.add("菊");
+		hashSet.add("菊");
+		System.out.println(hashSet.hashCode());
+		for (Iterator iterator = hashSet.iterator(); 
+				iterator.hasNext();) {
+			Object object = (Object) iterator.next();
+			System.out.println(object);
+		}
+		
+	}
+}

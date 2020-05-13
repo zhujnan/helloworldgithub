@@ -1,0 +1,29 @@
+package com.day10.runnable;
+
+public class T1Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		T2 t = new T2();
+		Thread tThread = new Thread(t);
+		T1 t1 = new T1();
+		Thread t1Thread = new Thread(t1);
+		tThread.start();
+		t1Thread.start();
+		
+		for(int i=0;i<50;i++){
+			System.out.println("i的值为"+i+"main方法主线程");
+		
+			 if(i==20) {
+					try {
+						t1Thread.join();
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+			}
+			
+		}
+		
+	}
+
+}

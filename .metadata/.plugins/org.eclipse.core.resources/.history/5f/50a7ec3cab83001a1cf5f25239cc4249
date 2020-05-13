@@ -1,0 +1,65 @@
+package com.day01.demo2;
+
+public class Demo03 {
+	public static void main(String[] args) {
+		/**
+		 * for(int i = 0;i<length:i++){
+		 * 		程序循环体
+		 * 	}
+		 */
+		int sum = 0;
+		for(int i =1;i<100;i+=2) {
+			sum+=i;
+		}
+		System.out.println(sum);//1050
+		
+		/**
+		 * 双层for循环:外层循环执行一次，内存循环执行一轮
+		 * 双层for循环经典案例
+		 * 				打印99乘法表
+		 */
+		for(int i =1;i<=9;i++) {
+			for(int j =1;j<=i;j++) {
+				System.out.print(i+"*"+j+"="+i*j+" ");//不换行打印
+			}
+			System.out.println();//换行打印
+		}
+		
+		/**
+		 * 用双层for循环
+		 * 		外层循环控制行，内层循环控制每一行的列
+		 * 打印一个等腰三角形
+		 * 
+		 * ^^^^*
+		 * ^^^***
+		 * ^^*****
+		 * ^*******
+		 */
+		for(int row = 0;row <8;row++) {
+			for(int j=8;j>row;j--) {
+				System.out.print(" ");
+			}
+			for(int i=1;i<=2*row+1;i++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		/**
+		 * 
+		 * 求a+aa+aaa+aaaa的值
+		 * 
+		 * 1+11+111+1111
+		 * 分析：
+		 * 		第二个值= 第1个值*10+第1个值
+		 * 		第三个值=第二个值*10+第1个值
+		 */
+		int numA = 1;
+		int n = 0;
+		int result = 0;
+		for(int i=0;i<5;i++) {
+			n = n*10 + numA;
+			result +=n;
+		}
+		
+	}
+}

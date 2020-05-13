@@ -1,0 +1,12 @@
+package com.day06.demo2;
+
+import java.math.BigDecimal;
+
+public class T3 {
+	public static void main(String[] args) {
+		double result = 4/3;
+		System.out.println(result);
+		BigDecimal bigDecimal = new BigDecimal(6);
+		System.out.println(bigDecimal.divide(new BigDecimal(4)));
+	}
+}

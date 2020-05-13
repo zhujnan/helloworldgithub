@@ -1,0 +1,17 @@
+package com.day09.demo;
+
+import java.util.List;
+
+public class Animal<T extends List> {
+	private T name;
+	
+	public T getName() {
+		return name;
+	}
+	public void setName(T name) {
+		this.name = name;
+	}
+	public void show() {
+		System.out.println("动物");
+	}
+}

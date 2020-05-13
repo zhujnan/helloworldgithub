@@ -1,0 +1,5 @@
+package com.day10.dem;
+
+public class TestThread01 extends Thread{
+
+}

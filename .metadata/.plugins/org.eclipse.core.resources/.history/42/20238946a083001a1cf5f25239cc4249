@@ -1,0 +1,22 @@
+package com.day01.demo2;
+/**
+ * 分支与循环
+ * 
+ * 分支语句：
+ * 		  if
+ * 		  if else
+ * 		  if else if  else
+ * 
+ * 		  switch
+ * 
+ * 循环语句:
+ * 		  for循环
+ * 		  while循环
+ * 		  do while循环
+ * 
+ * @author zhujn
+ *
+ */
+public class Demo01 {
+	
+}

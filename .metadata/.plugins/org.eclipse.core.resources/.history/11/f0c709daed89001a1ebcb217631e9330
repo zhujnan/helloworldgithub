@@ -1,0 +1,22 @@
+package com.day06.stringdemo;
+
+public class TestString3 {
+	public static void main(String[] args) {
+		int a = getTime("abkkcadkabkebfkabkskab","ab");
+		System.out.println(a);
+	}
+	public static int getTime(String str ,String key){
+		int s;
+		int count = 0;
+		while((s=str.indexOf(key))!=-1){
+			count++;
+			str = str.substring(s+key.length());
+		}
+		/**
+		 *  s=0 ,
+		 *  		kkcadkabkebfkabkskab
+		 */
+		return count;
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.day06.stringdemo;
+
+public class TestString {
+	public static void main(String[] args) {
+		String str = "123456789";
+		/**
+		 * 1.将该字符串拆分成char类型的数组
+		 */
+		
+	}
+}

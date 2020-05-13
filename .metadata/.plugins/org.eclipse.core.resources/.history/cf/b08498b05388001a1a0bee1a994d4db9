@@ -1,0 +1,24 @@
+package com.day04.cal;
+/**
+ * 工厂类
+ * @author zhujn
+ *
+ */
+public class OperationFactory {
+	
+	public static Operation operation(String str) {
+		Operation opera = null;
+		switch (str) {
+		case "+":
+			opera= new AddOperation();
+			break;
+		case "-":
+			opera= new SubOperation();
+			break;
+		default:
+			break;
+		}
+		return null;
+		
+	}
+}

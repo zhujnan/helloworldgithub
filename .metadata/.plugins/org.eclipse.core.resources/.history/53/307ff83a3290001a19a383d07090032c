@@ -1,0 +1,15 @@
+package com.teris;
+/**
+ * 俄罗斯方块类，
+ * 			L型，S型，O型，等。。。方块的父类
+ * @author zhujn
+ *
+ */
+public class Tetromino {
+	protected Cell[] cells = new Cell[4];
+	//protected State[] states;
+	public static Tetromino randomOne() {
+		Random random = new Random();
+		return null;
+	}
+}

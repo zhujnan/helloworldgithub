@@ -1,0 +1,13 @@
+package com.day06.demo2;
+
+import java.math.BigDecimal;
+
+public class T3 {
+	public static void main(String[] args) {
+		double result = 3.1456677/3236.0;
+		System.out.println(result);
+		
+		BigDecimal bigDecimal = new BigDecimal(3.1456677);
+		System.out.println(bigDecimal.divide(new BigDecimal(3236.0)));
+	}
+}

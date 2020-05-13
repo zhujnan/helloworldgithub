@@ -1,0 +1,9 @@
+package com.day09.demo;
+
+public class T2 {
+
+	public <E> get(int id,E e){
+		
+	}
+
+}

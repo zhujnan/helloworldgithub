@@ -1,0 +1,13 @@
+package com.day09.demo;
+
+public class T2 {
+
+	public static void main(String[] args) {
+		getResult();
+	}
+
+	private static T getResult(T t) {
+		return t;
+	}
+
+}

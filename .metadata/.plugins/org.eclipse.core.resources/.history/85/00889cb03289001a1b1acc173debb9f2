@@ -1,0 +1,27 @@
+package com.day05.demo2;
+
+public class TestMain {
+	public static void main(String[] args) {
+		SalariedEmployee salariedEmployee
+			= new SalariedEmployee();
+		MyDate mydate = new MyDate();
+		mydate.setDay(1);
+		mydate.setMonth(2);
+		mydate.setYear(2020);
+		
+		salariedEmployee.setBirthday(mydate);
+		HourlyEmployee hourlyEmployee
+			= new HourlyEmployee();
+		hourlyEmployee.setBirthday(mydate);
+		
+		Employee[] employee = new Employee[2];
+		employee[0] = salariedEmployee;
+		employee[1] = hourlyEmployee;
+		
+		PayrollSystem payrollSystem
+			= new PayrollSystem(employee);
+		Employee[] employee
+		
+		
+	}
+}

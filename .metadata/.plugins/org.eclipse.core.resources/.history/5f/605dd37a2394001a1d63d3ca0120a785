@@ -1,0 +1,13 @@
+package com.day10.dem;
+
+public class Thread01 extends Thread{
+	@Override
+	public void run() {
+		for(int i=1;i<100;i+=2) {
+			System.out.println(i);
+		}
+	}
+}
+class Thread02 extends Thread{
+	
+}

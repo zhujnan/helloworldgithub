@@ -1,0 +1,34 @@
+package com.day10.dem;
+
+public class Test extends Thread{
+		static int n = 0;
+		private int startNum=0;
+		public Test(int sn) {
+			startNum = sn;
+		}
+		public static synchronized void addSum(int num) {
+			n = n + num;
+		}
+		
+		public static void main(String[] args) {
+			Thread[] thList = new Thread[10];
+			for(int i=0;i<10;i++) {
+				thList[i] = new Test(i*10+1);
+				thList[i].start();
+			}
+			for(int i=0;i<10;i++) {
+				try {
+					thList[i].join();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		public void run() {
+			int sum = 0;
+			for(int i =0;i<10;i++) {
+				sum= sum+sn+i;
+			}
+		}
+}

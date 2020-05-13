@@ -1,0 +1,13 @@
+package com.day10.runnable;
+
+public class T1Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		T2 t = new T2();
+		Thread tThread = new Thread(t);
+		T1 t1 = new T1();
+		Thread t1Thread = new Thread(t);
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.day03.staticdemo;
+
+public class Demo2 {
+	static {
+		System.out.println("静态代码块");
+	}
+}

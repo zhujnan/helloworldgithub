@@ -1,0 +1,12 @@
+package com.day04.cal;
+
+import java.util.Scanner;
+
+public class OperationTest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

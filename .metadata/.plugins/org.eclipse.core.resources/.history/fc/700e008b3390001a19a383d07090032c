@@ -1,0 +1,7 @@
+package com.teris;
+
+public class I extends Tetromino {
+	public I() {
+		
+	}
+}

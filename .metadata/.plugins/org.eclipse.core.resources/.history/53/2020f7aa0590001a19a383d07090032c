@@ -1,0 +1,12 @@
+package com.day09.demo;
+
+import java.util.HashMap;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		HashMap<Integer, ?> hashmap = new HashMap<?, ?>();
+	
+	}
+
+}

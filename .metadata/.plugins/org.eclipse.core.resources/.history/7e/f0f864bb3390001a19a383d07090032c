@@ -1,0 +1,7 @@
+package com.teris;
+
+public class I extends Tetromino {
+	public I() {
+		cells[0] = new Cell(0,4,Teris.I)
+	}
+}

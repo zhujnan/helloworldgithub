@@ -1,0 +1,14 @@
+package com.day07.demo3;
+
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+
+	public static void main(String[] args) {
+		//创建linkedlist集合
+		LinkedList linkedList
+			= new LinkedList();
+		linkedList.add(e)
+	}
+
+}

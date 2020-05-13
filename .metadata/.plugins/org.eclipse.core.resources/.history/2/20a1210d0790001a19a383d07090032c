@@ -1,0 +1,9 @@
+package com.day09.demo;
+
+public class TestPerson {
+	public static void main(String[] args) {
+		Person<String,Integer> p
+		= new Person<String,Integer>();
+		
+	}
+}

@@ -1,0 +1,12 @@
+package com.day03.staticdemo;
+
+public class Demo2 {
+	public static int num = 3;
+	static {
+		System.out.println("num属性的值为"+num);
+		System.out.println("静态代码块");
+	}
+	public static void main(String[] args) {
+		Demo2 demo = new Demo2();
+	}
+}

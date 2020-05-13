@@ -1,0 +1,22 @@
+package com.day10.dem;
+/**
+ * 线程的实现方式1：继承Thread类
+ * @author zhujn
+ */
+public class TestThread01 extends Thread{
+	@Override
+	public void run() {
+		for(int i=0;i<20;i++) {
+			sleep(10);
+			System.out.println(Thread
+					.currentThread().getName()+"你好");
+		}
+	}
+	public static void main(String[] args) {
+		System.out.println("主线程");
+		TestThread01 t1 = new TestThread01();
+		TestThread01 t2= new TestThread01();
+		t1.start();
+		t2.start();
+	}
+}

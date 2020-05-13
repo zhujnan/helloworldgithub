@@ -1,0 +1,14 @@
+package com.day09.demo;
+
+public class T2 {
+
+	public <E> E get(int id,E e){
+		E result = null;
+		return result;
+	}
+	public static void main(String[] args) {
+		T2 t = new T2();
+		String str = t.get(1, "123");
+		
+	}
+}
